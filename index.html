@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#1e1a3b">
+  <title>The Gift Arcade | Louisville Jerky Co.</title>
+  <meta name="description" content="Twenty-three original, fully playable jerky arcade adventures. Bring a friend, chase a high score, and find a gift with great taste.">
+  <link rel="icon" href="brand/img/ljco-favicon.png">
+  <link rel="stylesheet" href="brand/tokens.css">
+  <link rel="stylesheet" href="brand/ljco-components.css">
+  <link rel="stylesheet" href="css/arcade.css">
+</head>
+<body data-theme="night">
+<a class="skip-link" href="#arcade-floor">Skip to the games</a>
+
+<header class="site-header" data-theme="night">
+  <a class="brand" href="https://www.lvjco.com/" aria-label="Louisville Jerky Co. home"><img src="brand/img/ljco-logo-2025-navy.png" alt="Louisville Jerky Co." width="132" height="92"></a>
+  <nav aria-label="Main navigation"><a class="nav-active" href="#arcade-floor">THE ARCADE</a><a href="#gift-quest">GIFT QUEST</a><a href="#prize-shelf">PRIZE SHELF</a></nav>
+  <button class="sound-toggle" id="arcade-sound" aria-pressed="false"><span aria-hidden="true">♪</span> <span id="arcade-sound-label">SOUND OFF</span></button>
+</header>
+
+<main id="main-content">
+  <noscript><p class="stock-note">The arcade and gift finder need JavaScript. You can still <a href="https://www.lvjco.com/collections/holiday-gift-guide">visit the gift shop</a>.</p></noscript>
+
+  <section class="arcade-intro" aria-labelledby="arcade-title">
+    <div class="starfield" aria-hidden="true"></div>
+    <div class="intro-copy">
+      <div class="eyebrow"><span class="status-lamp" aria-hidden="true"></span> LOUISVILLE, KY · ALWAYS FREE PLAY</div>
+      <h1 id="arcade-title" class="lj-headline lj-headline-hero"><span class="lj-hl-line">THE GIFT</span><span class="lj-hl-line lj-hl-pop">ARCADE.</span></h1>
+      <p>A little after-school magic. A lot of big flavor.<br>Pull up a cabinet. Your high score is waiting.</p>
+      <a class="lj-btn lj-btn-lg" href="#arcade-floor">PLAYER 1, READY?</a>
+    </div>
+    <div class="arcade-ticket" aria-label="All games free, no quarters needed"><span>ADMIT EVERYONE</span><strong>FREE<br>PLAY</strong><span>GOOD TIMES GUARANTEED*</span><small>*THE JERKY HELPS.</small></div>
+    <div class="player-select" aria-label="The Classic flavor crew">
+      <span class="player-select-label">CHOOSE YOUR PLAYER</span>
+      <ul>
+        <li data-theme="black-pepper"><img src="brand/img/characters/smoked-black-pepper.png" alt="Smoked Black Pepper soybean on a BMX bike" loading="lazy"><span class="lj-flavor lj-flavor-smoked-black-pepper">Smoked Black Pepper</span></li>
+        <li data-theme="pepperoni"><img src="brand/img/characters/pepperoni-pizza.png" alt="Pepperoni Pizza soybean on roller skates" loading="lazy"><span class="lj-flavor lj-flavor-pepperoni-pizza">Pepperoni Pizza</span></li>
+        <li data-theme="maple-bacon"><img src="brand/img/characters/maple-bacon.png" alt="Maple Bacon soybean in motion" loading="lazy"><span class="lj-flavor lj-flavor-maple-bacon">Maple Bacon</span></li>
+        <li data-theme="general-tsos"><img src="brand/img/characters/general-tsos.png" alt="General Tso's soybean in motion" loading="lazy"><span class="lj-flavor lj-flavor-general-tsos">General Tso's</span></li>
+        <li data-theme="buffalo"><img src="brand/img/characters/buffalo-hot-wing.png" alt="Buffalo Hot Wing soybean in motion" loading="lazy"><span class="lj-flavor lj-flavor-buffalo-hot-wing">Buffalo Hot Wing</span></li>
+        <li data-theme="carolina-bbq"><img src="brand/img/characters/smoky-carolina-bbq.png" alt="Smoky Carolina BBQ soybean in motion" loading="lazy"><span class="lj-flavor lj-flavor-smoky-carolina-bbq">Smoky Carolina BBQ</span></li>
+      </ul>
+    </div>
+    <div class="floor-ticker"><span><i aria-hidden="true">★</i> 23 ORIGINAL GAMES</span><span>KEYBOARD + TOUCH</span><span>BRING YOUR PLAYER TWO</span><span class="ticker-end">NO QUARTERS. NO PRESSURE.</span></div>
+  </section>
+
+  <div class="lj-divider lj-road road-wide" aria-hidden="true"><span class="lj-road-dash"></span></div>
+
+  <section id="arcade-floor" class="arcade-floor" aria-labelledby="floor-title">
+    <div class="section-kicker"><h2 id="floor-title" class="lj-headline lj-headline-headline"><span class="lj-hl-line">PICK YOUR <span class="pop">CABINET</span></span></h2><span>ONE MORE ROUND?</span></div>
+    <div class="cabinet-row">
+      <article class="arcade-machine kong-machine" data-cabinet="kong" data-theme="carolina-bbq">
+        <div class="machine-top"><span class="machine-number">01</span><span>1981 ENERGY</span><span class="machine-star" aria-hidden="true">★</span></div>
+        <div class="machine-marquee"><span>LOUISVILLE JERKY CO. PRESENTS</span><h3 class="lj-headline"><span class="lj-hl-line">JERKY</span><span class="lj-hl-line lj-hl-pop">KONG</span></h3></div>
+        <div class="machine-bezel"><div class="preview-wrap"><canvas id="preview-kong" width="720" height="450" aria-hidden="true"></canvas><div class="screen-glass" aria-hidden="true"></div><span class="screen-insert">CLIMB. JUMP. SAVE THE SNACKS.</span></div></div>
+        <div class="machine-info"><span>PLATFORM ADVENTURE</span><span class="local-best" data-best="kong">BEST 000000</span></div>
+        <div class="machine-deck"><div class="joystick" aria-hidden="true"><i></i></div><button class="play-button lj-btn" data-play="kong" aria-label="Play Jerky Kong">PLAY!</button><div class="deck-buttons" aria-hidden="true"><i></i><i></i></div></div>
+        <div class="machine-base"><span class="coin-slot" aria-hidden="true">FREE<br>PLAY</span><p>GOING UP?<br><span>TAKE THE GOOD STUFF.</span></p><div class="speaker-grill" aria-hidden="true"></div></div>
+      </article>
+      <article class="arcade-machine ninja-machine" data-cabinet="ninja" data-theme="buffalo">
+        <div class="machine-top"><span class="machine-number">02</span><span>1989 ENERGY</span><span class="machine-star" aria-hidden="true">★</span></div>
+        <div class="machine-marquee"><span>TEENAGED MUTANT</span><h3 class="lj-headline"><span class="lj-hl-line">NINJA</span><span class="lj-hl-line lj-hl-pop">JERKY</span></h3></div>
+        <div class="machine-bezel"><div class="preview-wrap"><canvas id="preview-ninja" width="720" height="450" aria-hidden="true"></canvas><div class="screen-glass" aria-hidden="true"></div><span class="screen-insert">BIG CITY. BOLD FLAVOR.</span></div></div>
+        <div class="machine-info"><span>STREET BRAWLER</span><span class="local-best" data-best="ninja">BEST 000000</span></div>
+        <div class="machine-deck"><div class="joystick" aria-hidden="true"><i></i></div><button class="play-button lj-btn" data-play="ninja" aria-label="Play Teenaged Mutant Ninja Jerky">PLAY!</button><div class="deck-buttons" aria-hidden="true"><i></i><i></i></div></div>
+        <div class="machine-base"><span class="coin-slot" aria-hidden="true">FREE<br>PLAY</span><p>SNACK ATTACK.<br><span>STREETS AHEAD OF BORING.</span></p><div class="speaker-grill" aria-hidden="true"></div></div>
+      </article>
+      <article class="arcade-machine jam-machine" data-cabinet="jam" data-theme="general-tsos">
+        <div class="machine-top"><span class="machine-number">03</span><span>1980 ENERGY</span><span class="machine-star" aria-hidden="true">★</span></div>
+        <div class="machine-marquee"><span>A JERKY MAN ADVENTURE</span><h3 class="lj-headline"><span class="lj-hl-line">JERKY</span><span class="lj-hl-line lj-hl-pop">JAM</span></h3></div>
+        <div class="machine-bezel"><div class="preview-wrap"><canvas id="preview-jam" width="720" height="450" aria-hidden="true"></canvas><div class="screen-glass" aria-hidden="true"></div><span class="screen-insert">FOLLOW YOUR TASTE BUDS.</span></div></div>
+        <div class="machine-info"><span>MAZE CHASE</span><span class="local-best" data-best="jam">BEST 000000</span></div>
+        <div class="machine-deck"><div class="joystick" aria-hidden="true"><i></i></div><button class="play-button lj-btn" data-play="jam" aria-label="Play Jerky Jam">PLAY!</button><div class="deck-buttons" aria-hidden="true"><i></i><i></i></div></div>
+        <div class="machine-base"><span class="coin-slot" aria-hidden="true">FREE<br>PLAY</span><p>CHASE THE FLAVOR.<br><span>TRY NOT TO GET CHASED.</span></p><div class="speaker-grill" aria-hidden="true"></div></div>
+      </article>
+    </div>
+    <div class="floor-footer"><span><i class="status-lamp" aria-hidden="true"></i> THE ORIGINAL THREE CABINETS</span><p>Pass the controls. Beat a friend's score. Celebrate with a snack.</p><span>EST. RIGHT NOW / FEELS LIKE '89</span></div>
+  </section>
+
+  <section id="nineties-wing" class="nineties-wing" aria-labelledby="nineties-title" data-theme="classic">
+    <div class="wing-heading">
+      <div><span class="eyebrow">NOW OPEN / A WHOLE NEW DECADE</span><h2 id="nineties-title" class="lj-headline lj-headline-hero lj-headline-plain"><span class="lj-hl-line">THE <span class="pop">’90s</span> WING.</span></h2><p>Twenty new ways to play. From the couch classics to the corner-store legends, every cabinet has its own flavor.</p></div>
+      <div class="wing-stamp lj-burst lj-burst-red" aria-label="20 new free-play games"><svg viewBox="0 0 100 100" aria-hidden="true"><polygon class="lj-burst-shadow" transform="translate(2 3)" points=""/><polygon class="lj-burst-fill" points=""/></svg><span class="lj-burst-text"><span>TWENTY NEW</span><b>1990–99</b><span>FREE PLAY</span></span></div>
+    </div>
+    <div class="wing-toolbar">
+      <div class="wing-filters" role="group" aria-label="Filter nineties games"><button data-genre="all" aria-pressed="true">ALL 20</button><button data-genre="action" aria-pressed="false">ACTION</button><button data-genre="speed" aria-pressed="false">SPEED + SPORT</button><button data-genre="explore" aria-pressed="false">EXPLORE</button><button data-genre="brain" aria-pressed="false">BRAIN FOOD</button></div>
+      <label class="wing-search"><span>FIND A CABINET</span> <input id="cabinet-search" type="search" placeholder="Name, genre or inspiration" autocomplete="off"></label>
+    </div>
+    <p id="wing-count" class="wing-count" aria-live="polite">20 CABINETS · KEYBOARD + TOUCH · FREE PLAY</p>
+    <div id="nineties-grid" class="nineties-grid"></div>
+    <p id="wing-empty" class="wing-empty" hidden>No cabinets found. Try another name or choose All 20.</p>
+    <details class="wing-notes"><summary>Meet the inspirations · 20 iconic games of the 1990s</summary><p>A curated, cross-genre selection, not an objective ranking. These are compact original Jerky games inspired by classic gameplay ideas. Original characters, artwork, music and level designs; no ROMs or copied game assets. The inspiration titles belong to their respective owners. No affiliation or endorsement is implied.</p><ol id="inspiration-list"></ol><p>Historical context: <a href="https://www.museumofplay.org/exhibits/world-video-game-hall-of-fame/inducted-games/" target="_blank" rel="noopener">The Strong’s World Video Game Hall of Fame</a>, <a href="https://captown.capcom.com/en/classic_games/22" target="_blank" rel="noopener">Capcom’s Street Fighter II history</a>, and <a href="https://en.wikipedia.org/wiki/1990s_in_video_games" target="_blank" rel="noopener">1990s video-game overview</a>. Dates refer to the listed editions and their original era. Pokémon began in Japan in 1996; the English Red/Blue releases followed in 1998. Tetris Attack is the 1996 localization of 1995’s Panel de Pon.</p></details>
+  </section>
+
+  <section class="hangout" aria-label="Local high scores and arcade settings">
+    <div class="scoreboard">
+      <div class="board-heading"><span class="eyebrow">BRAGGING RIGHTS</span><h2 class="lj-headline lj-headline-headline"><span class="lj-hl-line">THE HOUSE <span class="pop">RECORDS</span></span></h2><span class="record-note">SAVED ON THIS DEVICE</span></div>
+      <div id="records" class="record-list"></div>
+      <p class="board-note">One player at a time. Endless friendly rivalry.</p>
+    </div>
+    <div class="house-rules">
+      <span class="eyebrow">MAKE YOURSELF AT HOME</span>
+      <h2 class="lj-headline lj-headline-headline"><span class="lj-hl-line">STAY AWHILE.</span></h2>
+      <p>The lights are low. The cabinets are glowing. The good stuff is waiting at the prize counter.</p>
+      <div class="settings-row"><button id="ambience-toggle" aria-pressed="false">AMBIENCE OFF</button><button id="motion-toggle" aria-pressed="false">REDUCED MOTION OFF</button></div>
+      <small>Sound starts only when you turn it on. No autoplay surprises.</small>
+    </div>
+  </section>
+
+  <section id="gift-quest" class="gift-zone" aria-labelledby="gift-title" data-theme="carolina-bbq">
+    <div class="gift-intro">
+      <span class="eyebrow">YOUR NEXT SIDE QUEST</span>
+      <h2 id="gift-title" class="lj-headline lj-headline-hero"><span class="lj-hl-line">BE THE</span><span class="lj-hl-line lj-hl-pop">GIFT HERO.</span></h2>
+      <p>Three quick picks. A seriously good snack.<br>Find something for your favorite player two.</p>
+      <div class="gift-ticket" aria-hidden="true">BIG FLAVOR<br>100% GOOD TASTE</div>
+      <div class="cert-row"><span class="lj-cert lj-cert-plant-based">Plant Based</span><span class="lj-cert lj-cert-gluten-free">Gluten Free</span><span class="lj-cert lj-cert-non-gmo">Non-GMO</span></div>
+    </div>
+    <section class="cabinet gift-cabinet" aria-label="Interactive gift finder">
+      <div class="marquee"><span aria-hidden="true">★</span> GIFT QUEST <span aria-hidden="true">★</span></div>
+      <div class="screen">
+        <div class="screen-top"><span>GIFT QUEST / <span id="level">LEVEL 01</span></span><button id="sound" aria-pressed="false">SOUND OFF</button></div>
+        <div id="game"></div>
+        <div class="screen-bottom"><span>BOLD FLAVOR AT EVERY LEVEL</span><span>NO WRONG ANSWERS</span></div>
+      </div>
+      <div class="controls"><button id="back" disabled>BACK</button><div class="progress" aria-label="Quest progress"><span class="active"></span><span></span><span></span></div><button id="restart">START OVER</button></div>
+    </section>
+  </section>
+
+  <section id="prize-shelf" class="prize-zone" aria-labelledby="prize-title" data-theme="classic">
+    <div class="shelf-heading"><div><span class="eyebrow">EVERYBODY WINS HERE.</span><h2 id="prize-title" class="lj-headline lj-headline-hero lj-headline-plain"><span class="lj-hl-line">THE PRIZE SHELF</span></h2></div><span id="count">26 GIFTS</span></div>
+    <div class="filters" role="group" aria-label="Filter gift shelf"><button class="selected" data-filter="all" aria-pressed="true">ALL GIFTS</button><button data-filter="bundles" aria-pressed="false">BUNDLES</button><button data-filter="classics" aria-pressed="false">THE CLASSICS</button><button data-filter="small" aria-pressed="false">SMALL BATCH</button><button data-filter="extras" aria-pressed="false">EXTRAS</button></div>
+    <div id="shelf" class="product-grid"></div>
+    <p class="stock-note">Product collection snapshot: September 30, 2026. Prices in USD. Current prices, pack sizes and availability are confirmed in the shop. Playing does not award products or discounts.</p>
+  </section>
+</main>
+
+<div class="lj-divider lj-road road-wide" aria-hidden="true"><span class="lj-road-dash"></span></div>
+<footer data-theme="night">
+  <img class="footer-mark" src="brand/img/ljc-monogram.png" alt="" width="96" height="96" loading="lazy">
+  <strong>BE KIND. STAY CURIOUS. PLAY ONE MORE.</strong>
+  <div><span>LOUISVILLE JERKY CO. · MADE FOR GOOD TIMES.</span><a class="lj-btn" href="https://www.lvjco.com/collections/holiday-gift-guide" target="_blank" rel="noopener">VISIT THE SHOP!</a></div>
+  <small>Original snack-powered games. A love letter to the golden age of arcades.</small>
+</footer>
+
+<dialog id="game-dialog" aria-labelledby="game-title" aria-describedby="game-description" data-theme="night">
+  <div class="game-session">
+    <div class="session-top"><div><span id="game-genre" class="eyebrow"></span><h2 id="game-title"></h2></div><div class="session-tools"><button id="session-sound" aria-pressed="false" aria-label="Turn game sound on">♪ OFF</button><button id="pause-game" disabled>PAUSE</button><button id="exit-game" aria-label="Exit game and return to arcade">EXIT ×</button></div></div>
+    <p id="game-description" class="sr-only"></p>
+    <div class="session-hud"><span>SCORE <strong id="hud-score">000000</strong></span><span id="hud-lives"></span><span id="hud-objective"></span></div>
+    <p id="session-context" class="session-context" hidden aria-live="polite" aria-atomic="true"></p>
+    <div class="game-stage"><canvas id="arcade-canvas" width="960" height="600" tabindex="0" aria-label="Arcade game. Use arrows or WASD to move, Z or Space for action one, X for action two. P to pause."></canvas><div id="session-overlay" class="session-overlay"></div></div>
+    <div id="touch-controls" class="touch-controls" aria-label="Touch game controls"><div class="dpad"><button data-control="up" aria-label="Move up">▲</button><button data-control="left" aria-label="Move left">◀</button><button data-control="down" aria-label="Move down">▼</button><button data-control="right" aria-label="Move right">▶</button></div><div class="action-controls"><button data-control="b"><span>X</span><small id="action-b-label">ACTION</small></button><button data-control="a"><span>Z</span><small id="action-a-label">ACTION</small></button></div></div>
+    <div class="session-bottom"><span id="control-hint"></span><span id="performance-label" aria-hidden="true">60 FPS TARGET</span></div>
+    <p id="game-announcer" class="sr-only" aria-live="polite"></p>
+  </div>
+</dialog>
+
+<script>
+  // Draw the '90s wing starburst with the design system's PromoBurst geometry.
+  (function(){var p=[];for(var i=0;i<28;i++){var a=Math.PI*i/14-Math.PI/2,r=i%2?37:47;p.push((50+r*Math.cos(a)).toFixed(2)+','+(50+r*Math.sin(a)).toFixed(2));}
+  document.querySelectorAll('.wing-stamp polygon').forEach(function(el){el.setAttribute('points',p.join(' '));});})();
+</script>
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+<script type="module" src="js/arcade.js"></script>
+</body>
+</html>
