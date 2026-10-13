@@ -1,0 +1,86 @@
+body { margin: 0; font-family: var(--font-body); font-weight: 500; background: var(--ground); color: var(--ink); -webkit-font-smoothing: antialiased; }
+.lj-row { display: flex; flex-wrap: wrap; gap: var(--space-4); align-items: center; padding: var(--space-5); }
+.lj-col { display: flex; flex-direction: column; gap: var(--space-4); padding: var(--space-5); }
+
+/* EmailSection */
+.lj-section { box-sizing: border-box; width: 100%; max-width: var(--email-width); margin: 0 auto; background: var(--ground); color: var(--ink); padding-left: var(--space-6); padding-right: var(--space-6); }
+.lj-pad-sm { padding-top: var(--space-5); padding-bottom: var(--space-5); }
+.lj-pad-md { padding-top: var(--space-6); padding-bottom: var(--space-6); }
+.lj-pad-lg { padding-top: var(--space-8); padding-bottom: var(--space-7); }
+.lj-center { text-align: center; }
+.lj-left { text-align: left; }
+.lj-section p { margin: 0 0 var(--space-4); font-size: 16px; line-height: 24px; }
+.lj-section .lj-deck { font-size: 18px; line-height: 26px; margin: var(--space-3) 0 var(--space-5); }
+
+/* Headline */
+.lj-headline { margin: 0; font-family: var(--font-display); font-weight: 400; text-transform: uppercase; color: var(--headline); letter-spacing: 0; }
+.lj-headline-hero { font-size: 64px; line-height: 66px; }
+.lj-headline-headline { font-size: 44px; line-height: 48px; }
+.lj-headline-subhead { font-size: 28px; line-height: 32px; }
+.lj-hl-line { display: block; letter-spacing: 0.02em; -webkit-text-stroke: var(--stroke-headline) var(--edge); paint-order: stroke fill; text-shadow: var(--shadow-headline); }
+.lj-hl-pop { color: var(--headline-pop); }
+.lj-headline-plain .lj-hl-line { -webkit-text-stroke: 0; text-shadow: none; color: var(--ink); }
+
+/* Button */
+.lj-btn { display: inline-block; box-sizing: border-box; font-family: var(--font-display); font-weight: 400; font-size: 22px; line-height: 24px; letter-spacing: 0.02em; text-transform: uppercase; text-decoration: none; padding: 14px 36px; border-radius: var(--radius-pill); border: var(--stroke-bold) solid var(--edge); box-shadow: var(--shadow-hard); background: var(--cta); color: var(--on-cta); cursor: pointer; transition: transform .08s ease, box-shadow .08s ease; }
+.lj-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 0 0 var(--shadow-ink); }
+.lj-btn:active { transform: translateY(4px); box-shadow: 0 1px 0 0 var(--shadow-ink); }
+.lj-btn:focus-visible { outline: none; box-shadow: var(--shadow-hard), var(--focus-ring); }
+.lj-btn-lg { font-size: 26px; line-height: 28px; padding: 16px 44px; }
+.lj-btn-gold { background: var(--gold); color: var(--navy); }
+.lj-btn-sky { background: var(--sky); color: var(--navy); }
+.lj-btn-green { background: var(--leaf-green); color: var(--navy); }
+.lj-btn-pink { background: var(--pink); color: var(--navy); }
+.lj-btn-cream { background: var(--cream); color: var(--navy); }
+.lj-btn-navy { background: var(--navy); color: var(--cream); border-color: var(--ink-black); }
+
+/* CertBadge */
+.lj-cert { display: inline-block; font-family: var(--font-display); font-size: 15px; line-height: 18px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-black); padding: 5px 14px 4px; border-radius: var(--radius-pill); border: var(--stroke-bold) solid var(--ink-black); box-shadow: var(--shadow-hard-sm); white-space: nowrap; }
+.lj-cert-plant-based { background: var(--leaf-green); }
+.lj-cert-gluten-free { background: var(--gold); }
+.lj-cert-non-gmo { background: var(--lavender); }
+
+/* FlavorTag */
+.lj-flavor { display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box; text-align: center; text-transform: lowercase; font-family: var(--font-flavor); font-size: 20px; line-height: 18px; color: var(--navy); padding: 8px 14px 8px 10px; width: 120px; min-height: 64px; border-radius: var(--radius-md); border: 2px solid var(--navy); box-shadow: var(--shadow-hard); }
+.lj-flavor-smoked-black-pepper { background: var(--flavor-smoked-black-pepper); }
+.lj-flavor-pepperoni-pizza { background: var(--flavor-pepperoni-pizza); color: var(--ink-black); }
+.lj-flavor-maple-bacon { background: var(--flavor-maple-bacon); }
+.lj-flavor-general-tsos { background: var(--flavor-general-tsos); }
+.lj-flavor-buffalo-hot-wing { background: var(--flavor-buffalo-hot-wing); }
+.lj-flavor-smoky-carolina-bbq { background: var(--flavor-smoky-carolina-bbq); }
+
+/* PromoBurst */
+.lj-burst { position: relative; display: inline-flex; align-items: center; justify-content: center; }
+.lj-burst svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.lj-burst-fill { stroke: var(--ink-black); stroke-width: 2.5; stroke-linejoin: round; }
+.lj-burst-shadow { fill: var(--ink-black); }
+.lj-burst-red .lj-burst-fill { fill: var(--red); }
+.lj-burst-green .lj-burst-fill { fill: var(--leaf-green); }
+.lj-burst-gold .lj-burst-fill { fill: var(--gold); }
+.lj-burst-sky .lj-burst-fill { fill: var(--sky); }
+.lj-burst-text { position: relative; display: flex; flex-direction: column; align-items: center; font-family: var(--font-display); text-transform: uppercase; line-height: .95; color: var(--ink-black); text-align: center; }
+
+/* FlavorMeter */
+.lj-meter { display: inline-flex; flex-direction: column; gap: 10px; }
+.lj-meter-row { display: flex; align-items: center; gap: var(--space-4); }
+.lj-meter-label { box-sizing: border-box; width: 104px; text-align: center; font-family: var(--font-display); font-size: 15px; line-height: 18px; letter-spacing: 0.04em; text-transform: uppercase; background: var(--cream); color: var(--ink-black); padding: 4px 10px 3px; border-radius: var(--radius-pill); border: var(--stroke-bold) solid var(--edge); box-shadow: var(--shadow-hard-sm); }
+.lj-meter-bar { display: inline-flex; gap: 3px; padding: 3px; border: var(--stroke-bold) solid var(--edge); border-radius: var(--radius-sm); background: var(--ink-black); }
+.lj-seg { width: 18px; height: 14px; border-radius: 2px; background: var(--meter-empty); }
+.lj-seg-on { background: var(--leaf-green); }
+
+/* Letter */
+.lj-letter { font-family: var(--font-letter); font-weight: 700; font-size: 18px; line-height: 25px; color: var(--ink); text-align: left; }
+.lj-letter p { margin: 0 0 var(--space-5); font-size: 18px; line-height: 25px; }
+.lj-letter .lj-letter-salutation { margin-bottom: var(--space-5); }
+.lj-letter .lj-letter-signoff { text-align: right; margin-bottom: 0; }
+
+/* ReviewBar */
+.lj-reviews { display: flex; align-items: center; justify-content: center; gap: var(--space-3); background: var(--navy); color: var(--cream); padding: var(--space-3) var(--space-5); font-family: var(--font-body); font-weight: 700; font-size: 20px; line-height: 24px; letter-spacing: 0.02em; text-transform: uppercase; }
+.lj-stars { color: var(--gold); letter-spacing: 2px; font-size: 22px; }
+
+/* Divider */
+.lj-divider { display: block; width: 100%; max-width: var(--email-width); margin: 0 auto; }
+.lj-road { position: relative; height: 44px; background: var(--ink-black); }
+.lj-road-dash { position: absolute; left: 0; right: 0; top: 50%; height: 5px; margin-top: -2px; background-image: linear-gradient(90deg, var(--cream) 0 28px, transparent 28px 52px); background-size: 52px 5px; }
+.lj-scallop { height: 32px; line-height: 0; }
+.lj-scallop svg { display: block; width: 100%; height: 32px; }

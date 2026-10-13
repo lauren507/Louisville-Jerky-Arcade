@@ -1,0 +1,6 @@
+# Licensed brand fonts (Gotham Pro, Greycliff CF, Docktrin) are not committed to this public repo.
+# Copy them from the Louisville Jerky Co. design system into brand/fonts/ to run locally.
+brand/fonts/GothamPro*
+brand/fonts/GreycliffCF*
+brand/fonts/Docktrin*
+.DS_Store
